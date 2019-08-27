@@ -6,4 +6,8 @@ describe('Test the root path', () => {
     const response = await request(app).get('/');
     expect(response.statusCode).toBe(200);
   });
+  test('Prueba de PR mediante método GIT', async () => {
+    const response = await request(app).get('/users');
+    expect(response.statusCode).toBe(200);
+  });
 });
